@@ -1,0 +1,13 @@
+<Solution>
+  <Project Path="AstCalculator/AstCalculator.csproj" Id="f88172e1-b644-47c5-9512-28481898bf1a" />
+  <Project Path="AstCalculatorCLI/AstCalculatorCLI.csproj" Id="5fc5de6e-03a1-492d-a174-6b41d9f279b7">
+    <BuildDependency Project="AstCalculator/AstCalculator.csproj" />
+    <BuildDependency Project="AstDumper/AstDumper.csproj" />
+  </Project>
+  <Project Path="AstDumper/AstDumper.csproj" Id="22644c06-5590-4a6b-a24d-f5d07ede0e95">
+    <BuildDependency Project="AstCalculator/AstCalculator.csproj" />
+  </Project>
+  <Project Path="Tests/Tests.csproj" Id="f4c01768-6442-4df1-a519-3d9d3182c105">
+    <BuildDependency Project="AstCalculator/AstCalculator.csproj" />
+  </Project>
+</Solution>
